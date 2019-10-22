@@ -222,5 +222,13 @@ public class AnimationController {
         void onAnimationUpdated(@NonNull AnimationData value);
     }
 
+    /**
+     * This method set if the animation should repeat
+     * @param repeat if true will keep repeat the animation
+     */
+    public void setRepeat (boolean repeat){
+        this.repeat = repeat;
+    }
+
 
 }

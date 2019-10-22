@@ -266,6 +266,16 @@ public class AnimatedLineChart extends View implements LineChartManager.Animatio
         invalidate();
     }
 
+    /**
+     * This method set if the animation should repeat
+     * @param repeat if true will keep repeat the animation
+     */
+    public void setRepeat (boolean repeat){
+        lineChartManager.setRepeat(repeat);
+        lineChartManager.animate();
+        invalidate();
+    }
+
 
 
 

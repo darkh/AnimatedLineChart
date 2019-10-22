@@ -202,6 +202,13 @@ public class LineChartManager implements AnimationController.AnimationListener {
         }
     }
 
+    /**
+     * This method set if the animation should repeat
+     * @param repeat if true will keep repeat the animation
+     */
+    public void setRepeat (boolean repeat){
+        animationController.setRepeat(repeat);
+    }
 
     public interface AnimationListener {
 
